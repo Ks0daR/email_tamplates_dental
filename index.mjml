@@ -1,0 +1,15 @@
+<mjml>
+  <mj-head>
+    <mj-font
+      name="Montserrat"
+      href="https://fonts.googleapis.com/css2?family=Montserrat"
+    />
+    <mj-preview>Hello MJML</mj-preview>
+    <mj-title>Hello MJML</mj-title>
+  </mj-head>
+  <mj-body>
+    <mj-section><mj-column><mj-text>AAA</mj-text></mj-cloumn></mj-section>
+    <mj-section></mj-section>
+    <mj-section></mj-section>
+  </mj-body>
+</mjml>
