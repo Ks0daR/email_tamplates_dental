@@ -1,0 +1,14 @@
+<mjml>
+  <mj-body>
+    <mj-section background-color="#ffffff">
+      <mj-column>
+        <mj-image
+          width="120px"
+          src="./assets/logo/logo.png"
+          align="left"
+          href="#"
+        />
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

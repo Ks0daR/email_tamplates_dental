@@ -1,0 +1,161 @@
+<mjml>
+  <mj-head>
+    <mj-font
+      name="Montserrat"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800"
+    />
+    <mj-preview></mj-preview>
+    <mj-title></mj-title>
+    <mj-style inline="inline">
+      .title h1 { font-weight: 600; padding: 0 } .title span { color: #6caaad;
+      font-weight: 700} .clinic-info h4 { font-size: 18px; font-weight: 500;
+      margin: 0; padding: 10px} .clinic-info p { font-size: 16px; line-height:
+      20px}. confirmed-top{border-top-left-radius: 10px}
+    </mj-style>
+    <mj-style>
+      .confirmed-top h5 {margin: 0; font-size: 16px; font-weight: 500}
+      .confirmed-top h4 {margin: 0; font-size: 18px} .confirmed-bottom h4
+      {margin: 0; font-size: 18px}
+    </mj-style>
+    <mj-style>
+      .quote-text h4{font-size:16px} .quote-text p {line-height: 15px;
+      font-size:16px}
+    </mj-style>
+    <mj-style>
+      .doctor-card h4{font-size:16px; margin: 0; padding-bottom: 4px}
+      .doctor-card p{margin: 0}</mj-style
+    >
+  </mj-head>
+  <mj-body>
+    <mj-include path="./header.mjml" />
+    <mj-section background-color="#e8f4ee" padding="20px 0 0 0">
+      <mj-column>
+        <mj-text
+          align="center"
+          color="#9bc3ca"
+          font-family="Montserrat"
+          css-class="title"
+          padding="0"
+        >
+          <h1>
+            Hi, {Patient Name}! <br />
+            Your appintment is <span>confirmed!</span>
+          </h1>
+        </mj-text></mj-column
+      >
+    </mj-section>
+    <mj-section background-color="#e8f4ee">
+      <mj-column>
+        <mj-image
+          src="./assets/images/default-clinic-img.jpg"
+          alt="default-image"
+          width="370px"
+        />
+        <mj-text
+          align="center"
+          font-family="Montserrat"
+          css-class="clinic-info"
+        >
+          <h4>Axis Dental Clinic</h4>
+          <p>
+            Al Dhiyafa Road, 2nd December St. <br />
+            Dubai , United Arab Emirates
+          </p>
+        </mj-text></mj-column
+      >
+    </mj-section>
+    <mj-wrapper
+      background-color="linear-gradient(0deg, rgba(255,255,255,1) 50%, rgba(232,244,238,1) 50%)"
+      padding=" 0 100px"
+    >
+      <mj-section background-color="#a3d4cb" border-radius="20px">
+        <mj-column>
+          <mj-text
+            css-class="confirmed-top"
+            font-family="Montserrat"
+            padding="0 25px 5px"
+            color="#4f4f4f"
+          >
+            <h5>Confirmed Date and Time</h5>
+            <h4>Monday 08 Marth, at 09:00 AM</h4>
+          </mj-text>
+          <mj-divider
+            border-width="1px"
+            border-style="solid"
+            border-color="#8b9d99"
+          />
+          <mj-text
+            css-class="confirmed-bottom"
+            color="#4f4f4f"
+            font-family="Montserrat"
+          >
+            <h4>Emergency Appointment</h4>
+          </mj-text></mj-column
+        ></mj-section
+      >
+    </mj-wrapper>
+    <mj-section background-color="#ffffff" padding="10px 0 0 0">
+      <mj-column>
+        <mj-text
+          color="#9bc3ca"
+          align="center"
+          font-size="16px"
+          font-family="Montserrat"
+          line-height="15px"
+        >
+          <h3>Say hello to your dentist!</h3>
+        </mj-text>
+      </mj-column></mj-section
+    >
+    <mj-section
+      css-class="doctor-card"
+      background-color="#ffffff"
+      text-align="center"
+      padding="0 0 20px"
+    >
+      <mj-column>
+        <mj-image
+          align="right"
+          width="80px"
+          src="./assets/logo/logo.png"
+          alt=""
+        />
+      </mj-column>
+      <mj-column
+        ><mj-text
+          align="left"
+          padding="9px 0"
+          font-family="Montserrat"
+          color="#4f4f4f"
+        >
+          <h4>Dr. Death</h4>
+          <p>Lorem dolor</p></mj-text
+        >
+      </mj-column>
+    </mj-section>
+    <mj-section
+      background-url="./assets/background/quote-bgnd.png"
+      background-repeat="no-repeat"
+      background-color="#ffffff"
+    >
+      <mj-column width="300px">
+        <mj-text
+          css-class="quote-text"
+          font-family="Montserrat"
+          color="#4f4f4f"
+          align="center"
+          line-height="20px"
+        >
+          <h4>Vestibulum volutpat pretium libero.</h4>
+          <p>
+            Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet
+            feugiat, pede.
+          </p>
+          <p>Donec posuere vulputate arcu. Nullam tincidunt adipiscing enim.</p>
+        </mj-text>
+        <mj-spacer height="100px" /> </mj-column
+    ></mj-section>
+
+    <mj-include path="./footer.mjml" />
+  </mj-body>
+</mjml>
