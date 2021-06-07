@@ -27,7 +27,7 @@
     >
   </mj-head>
   <mj-body>
-    <mj-include path="./header.mjml" />
+    <mj-include path="../elements_of_email/header.mjml" />
     <mj-section background-color="#e8f4ee" padding="20px 0 0 0">
       <mj-column>
         <mj-text
@@ -47,7 +47,7 @@
     <mj-section background-color="#e8f4ee">
       <mj-column>
         <mj-image
-          src="./assets/images/default-clinic-img.jpg"
+          src="../assets/images/default-clinic-img.jpg"
           alt="default-image"
           width="370px"
         />
@@ -117,7 +117,7 @@
         <mj-image
           align="right"
           width="80px"
-          src="./assets/logo/logo.png"
+          src="../assets/logo/logo.png"
           alt=""
         />
       </mj-column>
@@ -134,7 +134,7 @@
       </mj-column>
     </mj-section>
     <mj-section
-      background-url="./assets/background/quote-bgnd.png"
+      background-url="../assets/background/quote-bgnd.png"
       background-repeat="no-repeat"
       background-color="#ffffff"
     >
@@ -156,6 +156,6 @@
         <mj-spacer height="100px" /> </mj-column
     ></mj-section>
 
-    <mj-include path="./footer.mjml" />
+    <mj-include path="../elements_of_email/footer.mjml" />
   </mj-body>
 </mjml>

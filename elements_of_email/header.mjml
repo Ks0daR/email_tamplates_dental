@@ -4,7 +4,7 @@
       <mj-column>
         <mj-image
           width="120px"
-          src="./assets/logo/logo.png"
+          src="../assets/logo/logo.png"
           align="left"
           href="#"
         />

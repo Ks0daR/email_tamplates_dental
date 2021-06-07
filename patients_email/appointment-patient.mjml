@@ -7,12 +7,11 @@
     <mj-preview></mj-preview>
     <mj-title></mj-title>
     <mj-style inline="inline">
-      .title h4 { font-weight: 600; padding-top: 10px; font-size: 18px; color:
-      #9bc3ca; margin: 0; padding-bottom: 30px } .title span { color: #6caaad;
-      font-weight: 700} .title p {font-size: 14px; font-weight: 600; margin: 0}
-      .clinic-info h4 { font-size: 18px; font-weight: 500; margin: 0; padding:
-      10px} .clinic-info p { font-size: 16px; line-height: 20px}.
-      confirmed-top{border-top-left-radius: 10px}
+      .title h1 { font-weight: 600; padding-top: 10px ;font-size: 18px} .title
+      span { color: #6caaad; font-weight: 700} .clinic-info h4 { font-size:
+      18px; font-weight: 500; margin: 0; padding: 10px} .clinic-info p {
+      font-size: 16px; line-height: 20px}. confirmed-top{border-top-left-radius:
+      10px}
     </mj-style>
     <mj-style>
       .confirmed-top h5 {margin: 0; font-size: 16px; font-weight: 500}
@@ -25,23 +24,49 @@
     >
   </mj-head>
   <mj-body>
-    <mj-include path="./header.mjml" />
+    <mj-include path="../elements_of_email/header.mjml" />
     <mj-section background-color="#e8f4ee" padding="20px 0 0 0">
       <mj-column>
         <mj-text
           align="center"
+          color="#9bc3ca"
           font-family="Montserrat"
           css-class="title"
           padding="0"
         >
-          <h4>
-            Sorry {Patient Name}, <br />
-            But your appointment has been <span>cancelled.</span>
-          </h4>
+          <h1>Good day {Patient Name}!</h1>
         </mj-text></mj-column
       >
     </mj-section>
-    <mj-wrapper background-color="#e8f4ee" padding=" 0 100px">
+    <mj-section background-color="#e8f4ee">
+      <mj-column width="500px">
+        <mj-image
+          src="../assets/background/appointment-bgnd.png"
+          alt="default-image"
+          padding="0"
+          width="330px"
+        />
+        <mj-text
+          align="center"
+          font-family="Montserrat"
+          css-class="clinic-info"
+          font-size="14px"
+        >
+          <p>
+            We’d like to remind you that your dental appointment with us is
+            tomorrow.
+          </p>
+          <p>
+            To refresh your memory, we’ve also attached your appointment
+            details. See you soon!
+          </p>
+        </mj-text></mj-column
+      >
+    </mj-section>
+    <mj-wrapper
+      background-color="linear-gradient(0deg, rgba(255,255,255,1) 50%, rgba(232,244,238,1) 50%)"
+      padding=" 0 100px"
+    >
       <mj-section background-color="#a3d4cb" border-radius="20px">
         <mj-column width="100%">
           <mj-text
@@ -71,7 +96,7 @@
             padding="15px 0 0 30px"
             align="left"
             width="80px"
-            src="./assets/logo/logo.png"
+            src="../assets/logo/logo.png"
             alt="default-image"
           />
         </mj-column>
@@ -87,14 +112,6 @@
         </mj-column>
       </mj-section>
     </mj-wrapper>
-    <mj-section background-color="#e8f4ee">
-      <mj-column>
-        <mj-text align="center" css-class="title" font-family="Montserrat">
-          <p>The clinic cancelled this appointment due to the reason:</p>
-          <h4>{Patient did not reply to email.}</h4>
-        </mj-text>
-      </mj-column>
-    </mj-section>
     <mj-section background-color="#ffffff" padding="10px 0 0 0">
       <mj-column>
         <mj-text
@@ -105,10 +122,7 @@
           font-weight="600"
           padding-top="30px"
         >
-          <p>
-            Look on the bright side, <br />
-            You may still book a new appointment here!
-          </p>
+          <p>If you cannot attend tomorrow, let them now!</p>
         </mj-text>
         <mj-button
           href="#"
@@ -121,11 +135,11 @@
           font-weight="600"
           padding-bottom="50px"
         >
-          Let`s find a new appointment
+          Cancel this appointment
         </mj-button>
       </mj-column></mj-section
     >
 
-    <mj-include path="./footer.mjml" />
+    <mj-include path="../elements_of_email/footer.mjml" />
   </mj-body>
 </mjml>

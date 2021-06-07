@@ -1,0 +1,35 @@
+<mjml>
+  <mj-head>
+    <mj-font name="Montserrat" href="https://fonts.googleapis.com/css2?family=Montserrat" />
+    <mj-preview>Hello {Patient Name}, Welcome to UAE Dentist!</mj-preview>
+    <mj-title>Hello {Patient Name}, Welcome to UAE Dentist!</mj-title>
+  </mj-head>
+  <mj-body>
+    <mj-hero background-color='#ffffff' background-url='../assets/background/welcome-bgnd.png'>
+      <mj-spacer height="10px" />
+      <mj-text align='center' color='#9bc3ca' font-family='Montserrat' font-weight='700'>
+        <h1>Hello {Practice Name}, <br /> Welcome to UAE Dentist! </h1>
+      </mj-text>
+      <mj-spacer height="400px" />
+    </mj-hero>
+    <mj-section background-color='#ffffff'>
+      <mj-column width='450px'>
+        <mj-text align='center' color='#4f4f4f' font-size='14px' font-weight='600' font-family='Montserrat' line-height='21px' padding='0 0 15px'>
+          Thank you for signing up! <br /><br />
+          Here at UAE Dentist, it is our aim to give our patients the best dental care they deserve from the best dentists across the country.
+          <br /><br />
+          We are here to help you connect to your future
+          patients with ease. One of our associates will reach out to you shortly.
+        </mj-text>
+        </mj-cloumn>
+    </mj-section>
+    <mj-section background-color='#ffffff'>
+      <mj-column width='370px'>
+        <mj-button href='#' border-radius='20px' line-height='20px' font-family="Montserrat" background-color="#a3d4cb" color="white" text-transform='uppercase' font-weight='600' padding-bottom='50px'>
+          Let`s get you a better smile
+        </mj-button>
+      </mj-column>
+    </mj-section>
+    <mj-include path="../elements_of_email/footer.mjml" />
+  </mj-body>
+</mjml>

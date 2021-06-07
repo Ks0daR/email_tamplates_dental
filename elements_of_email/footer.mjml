@@ -8,20 +8,20 @@
           mode="horizontal"
           align="left"
         >
-          <mj-social-element src="./assets/icons/instagram.png" href="#">
+          <mj-social-element src="../assets/icons/instagram.png" href="#">
           </mj-social-element>
-          <mj-social-element src="./assets/icons/twitter.png" href="#">
+          <mj-social-element src="../assets/icons/twitter.png" href="#">
           </mj-social-element>
-          <mj-social-element src="./assets/icons/linked-in.png" href="#">
+          <mj-social-element src="../assets/icons/linked-in.png" href="#">
           </mj-social-element>
-          <mj-social-element src="./assets/icons/facebook.png" href="#">
+          <mj-social-element src="../assets/icons/facebook.png" href="#">
           </mj-social-element>
         </mj-social>
       </mj-column>
       <mj-column>
         <mj-image
           width="120px"
-          src="./assets/logo/white-logo.png"
+          src="../assets/logo/white-logo.png"
           align="right"
           href="#"
         />

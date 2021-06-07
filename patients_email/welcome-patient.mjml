@@ -5,7 +5,7 @@
     <mj-title>Hello {Patient Name}, Welcome to UAE Dentist!</mj-title>
   </mj-head>
   <mj-body>
-    <mj-hero background-color='#ffffff' background-url='./assets/background/welcome-bgnd.png' >
+    <mj-hero background-color='#ffffff' background-url='../assets/background/welcome-bgnd.png' >
       <mj-spacer height="10px" />
         <mj-text align='center' color='#9bc3ca' font-family='Montserrat' font-weight='700'>
           <h1>Hello {Patient Name}, <br /> Welcome to UAE Dentist! </h1>
@@ -23,7 +23,7 @@
         <mj-text align='center' color='#4f4f4f' font-size='14px' font-family='Montserrat' line-height='21px'>
           And we’ll be there every step of your journey.
         </mj-text>
-        <mj-image padding='40px 0 10px ' width='100px' src="./assets/icons/teeth-icon.png" />
+        <mj-image padding='40px 0 10px ' width='100px' src="../assets/icons/teeth-icon.png" />
         </mj-cloumn>
     </mj-section>
     <mj-section background-color='#ffffff'>
@@ -36,6 +36,6 @@
          </mj-button>
       </mj-column>
     </mj-section>
-     <mj-include path="./footer.mjml" />
+     <mj-include path="../elements_of_email/footer.mjml" />
   </mj-body>
 </mjml>
