@@ -91,7 +91,7 @@
             <h4>Emergency Appointment</h4>
           </mj-text>
         </mj-column>
-        <mj-column width="30%">
+        <mj-column width="30%" padding-top="10px">
           <mj-image
             padding="15px 0 0 30px"
             align="left"
@@ -100,7 +100,7 @@
             alt="default-image"
           />
         </mj-column>
-        <mj-column width="70%">
+        <mj-column width="70%" padding-top="10px">
           <mj-text
             css-class="doctor-name"
             font-family="Montserrat"
