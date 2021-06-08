@@ -7,6 +7,7 @@
           src="../assets/logo/logo.png"
           align="left"
           href="#"
+          alt="logo"
         />
       </mj-column>
     </mj-section>

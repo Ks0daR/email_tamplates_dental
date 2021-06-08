@@ -8,13 +8,29 @@
           mode="horizontal"
           align="left"
         >
-          <mj-social-element src="../assets/icons/instagram.png" href="#">
+          <mj-social-element
+            src="../assets/icons/instagram.png"
+            href="#"
+            alt="instagram"
+          >
           </mj-social-element>
-          <mj-social-element src="../assets/icons/twitter.png" href="#">
+          <mj-social-element
+            src="../assets/icons/twitter.png"
+            href="#"
+            alt="twitter"
+          >
           </mj-social-element>
-          <mj-social-element src="../assets/icons/linked-in.png" href="#">
+          <mj-social-element
+            src="../assets/icons/linked-in.png"
+            href="#"
+            alt="linked-in"
+          >
           </mj-social-element>
-          <mj-social-element src="../assets/icons/facebook.png" href="#">
+          <mj-social-element
+            src="../assets/icons/facebook.png"
+            href="#"
+            alt="facebook"
+          >
           </mj-social-element>
         </mj-social>
       </mj-column>
@@ -24,6 +40,7 @@
           src="../assets/logo/white-logo.png"
           align="right"
           href="#"
+          alt="logo"
         />
       </mj-column>
     </mj-section>

@@ -1,11 +1,32 @@
-<mjml>
+const handlebars = require("handlebars");
+const mjml2html = require("mjml");
+
+module.exports = function getAppointmentDentistTemplate() {
+  const contextTemp = {
+    preview: "Vivamus aliquet elit ac", // сообщение при предпросмотре в почтовом ящике
+    title: "Vivamus aliquet elit ac",
+    practiceName: "Lorem ipsum",
+    patientName: "Ipsum lorem",
+    confirmedDateNTime: "Monday 08 Marth, at 09:00 AM",
+    appointmentName: "Emergency Appointment",
+    dentistAvatarLink: "#",
+    dentistName: "Dr. Death",
+    dentistDescription: "Lorem Dolor",
+    buttonLink: "#",
+    instagramLink: "#",
+    twitterLink: "#",
+    linkedInLink: "#",
+    facebookLink: "#",
+    logoLink: "#",
+  };
+  const template = handlebars.compile(`<mjml>
   <mj-head>
     <mj-font
       name="Montserrat"
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800"
     />
-    <mj-preview></mj-preview>
-    <mj-title></mj-title>
+    <mj-preview>{{preview}}</mj-preview>
+    <mj-title>{{title}}</mj-title>
     <mj-style inline="inline">
       .title h1 { font-weight: 600; padding-top: 10px; font-size: 18px;
       line-height: 25px} .title span { color: #6caaad; font-weight: 700}
@@ -23,7 +44,17 @@
     >
   </mj-head>
   <mj-body>
-    <mj-include path="../elements_of_email/header.mjml" />
+  <mj-section background-color="#ffffff">
+  <mj-column>
+    <mj-image
+      width="120px"
+      src="${process.env.API_URL}/email-assets/logo/logo.png"
+      align="left"
+      href={{logoLink}}
+      alt="logo"
+    />
+  </mj-column>
+ </mj-section>
     <mj-section background-color="#e8f4ee" padding="20px 0 0 0">
       <mj-column>
         <mj-text
@@ -34,7 +65,7 @@
           padding="0"
         >
           <h1>
-            Good day, {Practice Name}! <br />You have an appointment request
+            Good day, {{practiceName}}! <br />You have an appointment request
           </h1>
         </mj-text></mj-column
       >
@@ -42,8 +73,8 @@
     <mj-section background-color="#e8f4ee">
       <mj-column width="400px">
         <mj-image
-          src="../email-assets/background/appointment-bgnd.png"
-          alt="default-image"
+          src="${process.env.API_URL}/email-assets/background/appointment-bgnd.png"
+          alt="background-image"
           padding="0"
           width="330px"
         />
@@ -55,14 +86,14 @@
           padding="30px 0 10px"
           line-height="25px"
         >
-          <span>{Patient’s Name}</span> would like to set an appointment with
+          <span>{{patientName}}</span> would like to set an appointment with
           the following details
         </mj-text></mj-column
       >
     </mj-section>
     <mj-wrapper
       background-color="linear-gradient(0deg, rgba(255,255,255,1) 50%, rgba(232,244,238,1) 50%)"
-      padding=" 0 100px"
+      padding="0px 10%"
     >
       <mj-section background-color="#a3d4cb" border-radius="20px">
         <mj-column width="100%">
@@ -73,7 +104,7 @@
             color="#4f4f4f"
           >
             <h5>Confirmed Date and Time</h5>
-            <h4>Monday 08 Marth, at 09:00 AM</h4>
+            <h4>{{confirmedDateNTime}}</h4>
           </mj-text>
           <mj-divider
             border-width="1px"
@@ -85,7 +116,7 @@
             color="#4f4f4f"
             font-family="Montserrat"
           >
-            <h4>Emergency Appointment</h4>
+            <h4>{{appointmentName}}</h4>
           </mj-text>
         </mj-column>
         <mj-column width="30%" padding-top="10px">
@@ -93,8 +124,8 @@
             padding="15px 0 0 30px"
             align="left"
             width="80px"
-            src="../email-assets/logo/logo.png"
-            alt="default-image"
+            src="${process.env.API_URL}{{dentistAvatarLink}}"
+            alt="dentist-avatar"
           />
         </mj-column>
         <mj-column width="70%" padding-top="10px">
@@ -103,8 +134,8 @@
             font-family="Montserrat"
             color="#4f4f4f"
           >
-            <h4>Dr. Death</h4>
-            <p>Lorem dolor</p></mj-text
+            <h4>{{dentistName}}</h4>
+            <p>{{dentistDescription}}</p></mj-text
           >
         </mj-column>
       </mj-section>
@@ -123,7 +154,7 @@
           would like to make some changes with our patient.
         </mj-text>
         <mj-button
-          href="#"
+          href="{{buttonLink}}"
           border-radius="20px"
           line-height="20px"
           font-family="Montserrat"
@@ -137,7 +168,40 @@
         </mj-button>
       </mj-column></mj-section
     >
+ 
+    <mj-section background-color="#a3d4cb">
+       <mj-column
+         ><mj-social
+           font-size="15px"
+           icon-size="30px"
+           mode="horizontal"
+           align="left"
+         >
+           <mj-social-element src="${process.env.API_URL}/email-assets/icons/instagram.png" href={{instagramLink}} alt="instagram">
+           </mj-social-element>
+           <mj-social-element src="${process.env.API_URL}/email-assets/icons/twitter.png" href={{twitterLink}} alt="twitter">
+           </mj-social-element>
+           <mj-social-element src="${process.env.API_URL}/email-assets/icons/linked-in.png" href={{linkedInLink}} alt="linked-in">
+           </mj-social-element>
+           <mj-social-element src="${process.env.API_URL}/email-assets/icons/facebook.png" href={{facebookLink}} alt="facebook">
+           </mj-social-element>
+         </mj-social>
+       </mj-column>
+       <mj-column>
+         <mj-image
+           width="120px"
+           src="${process.env.API_URL}/email-assets/logo/white-logo.png"
+           align="right"
+           alt="logo"
+           href={{logoLink}}
+         />
+       </mj-column>
+     </mj-section>
+  </mj-body> </mjml
+ >`);
 
-    <mj-include path="../elements_of_email/footer.mjml" />
-  </mj-body>
-</mjml>
+  const mjml = template(contextTemp);
+  const result = mjml2html(mjml);
+
+  return result.html;
+};

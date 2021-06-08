@@ -7,9 +7,11 @@
     <mj-preview></mj-preview>
     <mj-title></mj-title>
     <mj-style inline="inline">
-      .title h1 { font-weight: 600; padding-top: 10px; font-size: 18px;
-      line-height: 25px} .title span { color: #6caaad; font-weight: 700}
-      .clinic-info span { font-size: 14px; font-weight: 600}.
+      .title h4 { font-weight: 600; padding-top: 10px; font-size: 18px; color:
+      #9bc3ca; margin: 0; padding-bottom: 30px } .title span { color: #6caaad;
+      font-weight: 700} .title p {font-size: 14px; font-weight: 600; margin: 0}
+      .clinic-info h4 { font-size: 18px; font-weight: 500; margin: 0; padding:
+      10px} .clinic-info p { font-size: 16px; line-height: 20px}.
       confirmed-top{border-top-left-radius: 10px}
     </mj-style>
     <mj-style>
@@ -28,44 +30,34 @@
       <mj-column>
         <mj-text
           align="center"
-          color="#9bc3ca"
           font-family="Montserrat"
           css-class="title"
           padding="0"
         >
-          <h1>
-            Good day, {Practice Name}! <br />You have an appointment request
-          </h1>
+          <h4>
+            Sorry {Practice Name}, <br />
+            One of your appointments has been <span>cancelled.</span>
+          </h4>
         </mj-text></mj-column
       >
     </mj-section>
-    <mj-section background-color="#e8f4ee">
-      <mj-column width="400px">
-        <mj-image
-          src="../email-assets/background/appointment-bgnd.png"
-          alt="default-image"
-          padding="0"
-          width="330px"
-        />
-        <mj-text
-          align="center"
-          font-family="Montserrat"
-          css-class="clinic-info"
-          font-size="14px"
-          padding="30px 0 10px"
-          line-height="25px"
-        >
-          <span>{Patient’s Name}</span> would like to set an appointment with
-          the following details
-        </mj-text></mj-column
-      >
-    </mj-section>
-    <mj-wrapper
-      background-color="linear-gradient(0deg, rgba(255,255,255,1) 50%, rgba(232,244,238,1) 50%)"
-      padding=" 0 100px"
-    >
+    <mj-wrapper background-color="#e8f4ee" padding=" 0 100px 50px 100px">
       <mj-section background-color="#a3d4cb" border-radius="20px">
         <mj-column width="100%">
+          <mj-text
+            css-class="confirmed-top"
+            font-family="Montserrat"
+            padding="0 25px 5px"
+            color="#4f4f4f"
+          >
+            <h5>Patient Name</h5>
+            <h4>Clay Jensen</h4>
+          </mj-text>
+          <mj-divider
+            border-width="1px"
+            border-style="solid"
+            border-color="#8b9d99"
+          />
           <mj-text
             css-class="confirmed-top"
             font-family="Montserrat"
@@ -93,7 +85,7 @@
             padding="15px 0 0 30px"
             align="left"
             width="80px"
-            src="../email-assets/logo/logo.png"
+            src="../assets/logo/logo.png"
             alt="default-image"
           />
         </mj-column>
@@ -110,17 +102,18 @@
       </mj-section>
     </mj-wrapper>
     <mj-section background-color="#ffffff" padding="10px 0 0 0">
-      <mj-column width="500px">
+      <mj-column>
         <mj-text
           color="#4f4f4f"
           align="center"
-          font-size="14px"
+          font-size="16px"
           font-family="Montserrat"
           font-weight="600"
           padding-top="30px"
+          line-height="25px"
         >
-          Let them know that you are available on the said schedule or if you
-          would like to make some changes with our patient.
+          Let’s look forward into new and future appointments instead. <br />
+          Browse them here!
         </mj-text>
         <mj-button
           href="#"
@@ -133,7 +126,7 @@
           font-weight="600"
           padding-bottom="50px"
         >
-          Confirm this appointment
+          Manage my schedule
         </mj-button>
       </mj-column></mj-section
     >
