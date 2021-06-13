@@ -12,12 +12,12 @@
       .clinic-info span { font-size: 14px; font-weight: 600}.
       confirmed-top{border-top-left-radius: 10px}
     </mj-style>
-    <mj-style>
+    <mj-style inline="inline">
       .confirmed-top h5 {margin: 0; font-size: 16px; font-weight: 500}
       .confirmed-top h4 {margin: 0; font-size: 18px} .confirmed-bottom h4
       {margin: 0; font-size: 18px}
     </mj-style>
-    <mj-style>
+    <mj-style inline="inline">
       .doctor-name h4 {margin: 0; font-size: 16px } .doctor-name p {margin: 0;
       padding-top:6px; font-size: 16px }</mj-style
     >

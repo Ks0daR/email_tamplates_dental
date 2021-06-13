@@ -5,7 +5,7 @@
     <mj-title>Hello {Patient Name}, Welcome to UAE Dentist!</mj-title>
   </mj-head>
   <mj-body>
-    <mj-hero background-color='#ffffff' background-url='../assets/background/welcome-bgnd.png'>
+    <mj-hero background-color='#ffffff' background-url='../email-assets/background/welcome-bgnd.png'>
       <mj-spacer height="10px" />
       <mj-text align='center' color='#9bc3ca' font-family='Montserrat' font-weight='700'>
         <h1>Hello {Practice Name}, <br /> Welcome to UAE Dentist! </h1>

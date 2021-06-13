@@ -1,7 +1,7 @@
 <mjml>
   <mj-body>
     <mj-section background-color="#a3d4cb">
-      <mj-column
+      <mj-column width="50%"
         ><mj-social
           font-size="15px"
           icon-size="30px"
@@ -9,35 +9,35 @@
           align="left"
         >
           <mj-social-element
-            src="../assets/icons/instagram.png"
+            src="../email-assets/icons/instagram.png"
             href="#"
             alt="instagram"
           >
           </mj-social-element>
           <mj-social-element
-            src="../assets/icons/twitter.png"
+            src="../email-assets/icons/twitter.png"
             href="#"
             alt="twitter"
           >
           </mj-social-element>
           <mj-social-element
-            src="../assets/icons/linked-in.png"
+            src="../email-assets/icons/linked-in.png"
             href="#"
             alt="linked-in"
           >
           </mj-social-element>
           <mj-social-element
-            src="../assets/icons/facebook.png"
+            src="../email-assets/icons/facebook.png"
             href="#"
             alt="facebook"
           >
           </mj-social-element>
         </mj-social>
       </mj-column>
-      <mj-column>
+      <mj-column width="50%">
         <mj-image
           width="120px"
-          src="../assets/logo/white-logo.png"
+          src="../email-assets/logo/white-logo.png"
           align="right"
           href="#"
           alt="logo"

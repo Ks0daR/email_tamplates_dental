@@ -13,14 +13,17 @@
       font-size: 16px; line-height: 20px}. confirmed-top{border-top-left-radius:
       10px}
     </mj-style>
-    <mj-style>
+    <mj-style inline="inline">
       .confirmed-top h5 {margin: 0; font-size: 16px; font-weight: 500}
       .confirmed-top h4 {margin: 0; font-size: 18px} .confirmed-bottom h4
       {margin: 0; font-size: 18px}
     </mj-style>
-    <mj-style>
+    <mj-style inline="inline">
       .doctor-name h4 {margin: 0; font-size: 16px } .doctor-name p {margin: 0;
       padding-top:6px; font-size: 16px }</mj-style
+    >
+    <mj-style inline="inline">
+      .footer-left {width: 45% } .footer-right {width: 45% }</mj-style
     >
   </mj-head>
   <mj-body>
@@ -41,7 +44,7 @@
     <mj-section background-color="#e8f4ee">
       <mj-column width="500px">
         <mj-image
-          src="../assets/background/appointment-bgnd.png"
+          src="../email-assets/background/appointment-bgnd.png"
           alt="default-image"
           padding="0"
           width="330px"
@@ -96,7 +99,7 @@
             padding="15px 0 0 30px"
             align="left"
             width="80px"
-            src="../assets/logo/logo.png"
+            src="../email-assets/logo/logo.png"
             alt="default-image"
           />
         </mj-column>
@@ -106,7 +109,7 @@
             font-family="Montserrat"
             color="#4f4f4f"
           >
-            <h4>Dr. Death</h4>
+            <h4>Dr. Frank</h4>
             <p>Lorem dolor</p></mj-text
           >
         </mj-column>
@@ -140,6 +143,50 @@
       </mj-column></mj-section
     >
 
-    <mj-include path="../elements_of_email/footer.mjml" />
+    <mj-section background-color="#a3d4cb">
+      <mj-column width="49%" css-class="footer-left"
+        ><mj-social
+          font-size="15px"
+          icon-size="30px"
+          mode="horizontal"
+          align="left"
+          padding="20px 0"
+        >
+          <mj-social-element
+            src="../email-assets/icons/instagram.png"
+            href="#"
+            alt="instagram"
+          >
+          </mj-social-element>
+          <mj-social-element
+            src="../email-assets/icons/twitter.png"
+            href="#"
+            alt="twitter"
+          >
+          </mj-social-element>
+          <mj-social-element
+            src="../email-assets/icons/linked-in.png"
+            href="#"
+            alt="linked-in"
+          >
+          </mj-social-element>
+          <mj-social-element
+            src="../email-assets/icons/facebook.png"
+            href="#"
+            alt="facebook"
+          >
+          </mj-social-element>
+        </mj-social>
+      </mj-column>
+      <mj-column width="49%" css-class="footer-right">
+        <mj-image
+          width="120px"
+          src="../email-assets/logo/white-logo.png"
+          align="right"
+          href="#"
+          alt="logo"
+        />
+      </mj-column>
+    </mj-section>
   </mj-body>
 </mjml>

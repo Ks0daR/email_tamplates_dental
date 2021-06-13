@@ -44,7 +44,7 @@
     <mj-section background-color="#e8f4ee">
       <mj-column width="500px">
         <mj-image
-          src="../assets/background/review-bgnd.png"
+          src="../email-assets/background/review-bgnd.png"
           alt="default-image"
           padding="0"
           width="330px"
